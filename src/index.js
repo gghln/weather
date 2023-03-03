@@ -1,3 +1,4 @@
+import { getForecast, Forecast } from "./callAPI"
 import { createDOM } from "./DOM"
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -6,5 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () =>{
         console.log(cityName.value)
         createDOM(cityName.value)
+        Forecast(cityName.value)
+        getForecast(cityName.value)
     })
 })
