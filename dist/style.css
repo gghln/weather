@@ -16,7 +16,7 @@ nav{
     justify-content:flex-start;
     align-items: center;
     row-gap: 2em;
-    background-color: whitesmoke;
+    background-color:lightgray;
 }
 
 form{
@@ -57,14 +57,17 @@ form{
 }
 
 #weather{
-    width:150px;
-    height:150px;
-    border: solid;
+    width:100px;
+    height:100px;
     margin:2em 0 2em 0;
+}
+#weather img{
+    width:100px;
+    height:100px;
 }
 
 #temperature{
-    font-size: 100px;
+    font-size: 70px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -89,8 +92,14 @@ img{
     height: 200px;
     width: 200px;
     margin-top:2%;
-    background-color: whitesmoke;
+    background-color: lightsteelblue;
     border-radius: 10px;
+}
+
+#card:hover{
+    transition: all .8s ease-in-out; 
+    transform: scale(1.2);
+    background-color: lightblue;
 }
 
 #card-day{
@@ -101,15 +110,19 @@ img{
 
 #card-weather{
     position:relative;
-    left:40%;
-    top:20%;
+    left:45%;
+    top:15%;
 }
 
+#card-weather img{
+    width: 40px;
+    height: 40px;
+}
 
 #card-temperature{
     position:relative;
     left:45%;
-    top:50%;
+    top:40%;
     font-size: 28px;
     font-weight: bold;
 }

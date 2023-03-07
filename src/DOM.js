@@ -24,7 +24,7 @@ async function createDOM(cityName){
         let forecastDiv = `<div id="card">
                                 <div id="card-day">${new Date(element.timestamp * 1000).toLocaleString("en-us", {weekday: "long"})}</div>
                                 <div id="card-weather" class="card-weather">${element.weather}</div>
-                                <div id="card-temperature">${element.temperature}</div>
+                                <div id="card-temperature">${element.temperature} ℃</div>
                             </div>`                  
         container.innerHTML += forecastDiv  
     })
