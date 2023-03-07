@@ -1,0 +1,115 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 700px;
+    justify-content:flex-start;
+    align-items: center;
+    row-gap: 2em;
+    background-color: whitesmoke;
+}
+
+form{
+    margin-top:2em;
+    display: inline-block;
+}
+
+#search{
+    padding: 0;
+    width:140px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#click{
+    width:40px;
+    height: 40px;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-color: lightblue;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#click:hover{
+    background-color: lightskyblue;
+}
+
+#name{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#weather{
+    width:150px;
+    height:150px;
+    border: solid;
+    margin:2em 0 2em 0;
+}
+
+#temperature{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    width:24px;
+    height: 24px;
+}
+
+#forecast-container{
+    display: flex;
+    flex-direction: row;
+    gap:2em;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    margin-top:2%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+#card-day{
+    margin:10px 0 0px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#card-weather{
+    position:relative;
+    left:40%;
+    top:20%;
+}
+
+
+#card-temperature{
+    position:relative;
+    left:45%;
+    top:50%;
+    font-size: 28px;
+    font-weight: bold;
+}
